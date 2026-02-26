@@ -44,6 +44,43 @@ Use raw LaTeX to center a title:
 
 **Note:** Don't use `#` heading inside `\begin{center}` - use `\LARGE\textbf{}` instead.
 
+### Text Sizing and Formatting
+
+When using LaTeX commands for text formatting, you can control text size and style:
+
+**Text Sizes (use lowercase for LaTeX commands):**
+```markdown
+\tiny{Very small text}
+\small{Small text}
+\normalsize{Normal size text}
+\large{Large text}
+\Large{Larger text}
+\LARGE{Very large text}
+\huge{Huge text}
+```
+
+**Text Formatting:**
+```markdown
+\textbf{Bold text}           # Bold
+\textnormal{Normal text}     # Remove bold, use normal weight
+\textit{Italic text}         # Italic
+```
+
+**Example with multiple sizes:**
+```markdown
+\begin{center}
+\LARGE\textbf{Main Title}\\
+\normalsize\textnormal{Subtitle or author name}
+\end{center}
+```
+
+**Common Mistakes:**
+- ❌ `\SMALL` (uppercase) - Not a valid command
+- ❌ `\plain` - Not a valid command
+- ✅ `\small` (lowercase) - Correct
+- ✅ `\normalsize` - Correct for normal size
+- Always use `\\` to create line breaks inside `\begin{center}...\end{center}`
+
 ### Page Break
 
 Insert a page break anywhere in your document:
