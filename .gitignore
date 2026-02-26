@@ -1,0 +1,62 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Thumbnails
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# PDF output files
+*.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+
+# Temp files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+\#*\#
+.#*
+
+# Shell
+*.sh.bak
+
+# Pandoc
+*.tex.bak
+
+# Editor directories
+.idea/
+.vscode/
+*.sublime-*
+
+# Claude
+.claude/
