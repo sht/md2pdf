@@ -67,8 +67,44 @@ Or:
 - **Paragraph spacing:** 1em
 - **Bullet/List spacing:** 0.2em
 
-## Requirements
+## Installation (macOS)
 
-- Pandoc
-- XeLaTeX (MacTeX or TeX Live)
-- Inter font (installed via `brew install --cask font-inter`)
+### 1. Install Homebrew (if not installed)
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 2. Install Pandoc
+```bash
+brew install pandoc
+```
+
+### 3. Install MacTeX (LaTeX distribution with XeLaTeX)
+```bash
+brew install --cask mactex
+```
+
+After installation, restart your terminal or run:
+```bash
+eval "$(/usr/libexec/path_helper)"
+```
+
+### 4. Install Inter Font
+```bash
+brew install --cask font-inter
+```
+
+### 5. Verify Installation
+```bash
+pandoc --version
+xelatex --version
+fc-list | grep -i inter
+```
+
+## Requirements Summary
+
+| Dependency | Install Command | Purpose |
+|------------|-----------------|---------|
+| Pandoc | `brew install pandoc` | Markdown converter |
+| MacTeX | `brew install --cask mactex` | PDF generation (XeLaTeX) |
+| Inter Font | `brew install --cask font-inter` | Document font |
