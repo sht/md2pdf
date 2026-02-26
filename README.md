@@ -13,7 +13,7 @@ A simple shell script to convert Markdown files to professional-looking PDFs usi
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/md2pdf.git
+git clone https://github.com/sht/md2pdf.git
 cd md2pdf
 
 # Make executable
