@@ -42,6 +42,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Create LaTeX header (inline to keep everything in one script)
 HEADER_FILE=$(mktemp)
 cat > "$HEADER_FILE" << 'EOF'
+% Load longtable package for table formatting
+\usepackage{longtable}
+
 % Left-align tables
 \setlength{\LTleft}{0pt}
 \setlength{\LTright}{\fill}
