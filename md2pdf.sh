@@ -53,6 +53,7 @@ cat > "$HEADER_FILE" << 'EOF'
 \usepackage{array}
 \renewcommand{\arraystretch}{1.3}
 
+
 % Reduce space after headings
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{12pt}{2pt}
@@ -88,6 +89,7 @@ pandoc "$INPUT_FILE" \
     -V geometry:margin=1in \
     --pdf-engine=xelatex \
     -V mainfont:"Inter" \
+    -L "$SCRIPT_DIR/bold-headers.lua" \
     2>&1
 
 # Check if conversion was successful
